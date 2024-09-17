@@ -31,23 +31,22 @@ function render(variables = {}) {
 
   /*-----Twitter------*/
   let twitter = "";
-  if (!variables.twitter) twitter += "https://twitter.com/4geeksacademy";
+  if (!variables.twitter) twitter += "4geeksacademy";
   else twitter += variables.twitter;
 
   /*-----Github------*/
   let github = "";
-  if (!variables.github) github += "https://github.com/4geeksacademy";
+  if (!variables.github) github += "4geeksacademy";
   else github += variables.github;
 
   /*-----Github------*/
   let linkedin = "";
-  if (!variables.linkedin)
-    linkedin += "https://linkedin.com/school/4geeksacademy";
+  if (!variables.linkedin) linkedin += "school/4geeksacademy";
   else linkedin += variables.linkedin;
 
   /*-----Instagram------*/
   let instagram = "";
-  if (!variables.instagram) instagram += "https://instagram.com/4geeksacademy";
+  if (!variables.instagram) instagram += "4geeksacademy";
   else instagram += variables.instagram;
 
   /*-----FullName------*/
@@ -80,10 +79,10 @@ function render(variables = {}) {
           <h2>${roleFinal}</h2>
           <h3>${cityFinal}, ${countryFinal}</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="${twitter}"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="${github}"><i class="fab fa-github "></i></a></li>
-            <li><a href="${linkedin}"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="${instagram}"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${twitter} "><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${github} "><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${linkedin} "><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${instagram} "><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
